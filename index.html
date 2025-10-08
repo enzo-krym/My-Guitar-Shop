@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarCenter - Guitares à votre style en Ligne</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-guitar"></i> GuitarCenter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#guitares">Guitares</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Catégories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-icon" href="#panier">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero-section" id="accueil">
+        <div class="container">
+            <h1>Trouvez Votre Guitare idéale</h1>
+            <p>Guitares personnaliser pour tous les styles et budgets</p>
+            <button class="btn btn-primary-custom">Acheter Maintenant <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Section Catégories -->
+    <section class="category-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Parcourir par Catégorie</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-guitar"></i>
+                        <h4>Guitares Électriques</h4>
+                        <p>Rock, Jazz, Blues</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-drum"></i>
+                        <h4>Guitares Acoustiques</h4>
+                        <p>Folk, Country, Pop</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-music"></i>
+                        <h4>Guitares Classiques</h4>
+                        <p>Traditionnelle, Flamenco</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="category-card">
+                        <i class="fas fa-guitar"></i>
+                        <h4>Guitares Basses</h4>
+                        <p>4, 5, 6 Cordes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Guitares en Vedette -->
+    <section class="py-5" id="guitares">
+        <div class="container">
+            <h2 class="section-title">Guitares en Vedette</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card guitar-card">
+                        <img src="https://www.michenaud.com/upDATA/p/53000/52648/img1616606149-V0zsh5Ya/500medium.jpg" alt="Stratocaster">
+                        <div class="card-body">
+                            <span class="badge badge-custom">Meilleure Vente</span>
+                            <h5 class="card-title">Squier Stratocaster</h5>
+                            <p class="card-text">Guitare électrique classique avec un son iconique et des options polyvalentes.</p>
+                            <div class="price">299 €</div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                            </div>
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-cart-plus"></i> Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card guitar-card">
+                        <img src="https://www.michenaud.com/upDATA/p/60500/60190/img1743857433-5DxCf5qO/zoom.png" alt="Les Paul">
+                        <div class="card-body">
+                            <span class="badge badge-custom">Nouveau</span>
+                            <h5 class="card-title">Gibson Les Paul</h5>
+                            <p class="card-text">Guitare électrique premium connue pour son son riche et chaud avec sustain.</p>
+                            <div class="price">1 499 €</div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                            </div>
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-cart-plus"></i> Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card guitar-card">
+                        <img src="https://www.michenaud.com/upDATA/p/52500/52131/img1608808546-tXIOYa5n/500medium.jpg" alt="Guitare Acoustique">
+                        <div class="card-body">
+                            <span class="badge badge-custom">Top Note</span>
+                            <h5 class="card-title">Taylor 814ce</h5>
+                            <p class="card-text">Acoustique-électrique premium avec clarté exceptionnelle et projection.</p>
+                            <div class="price">1 199 €</div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                            </div>
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-cart-plus"></i> Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card guitar-card">
+                        <img src="https://www.michenaud.com/upDATA/p/14500/14350/img1432831808-tUHaO6aO/500medium.jpg" alt="Guitare Classique">
+                        <div class="card-body">
+                            <h5 class="card-title">Yamaha C40</h5>
+                            <p class="card-text">Guitare classique parfaite pour débutants avec un son chaud et équilibré.</p>
+                            <div class="price">179 €</div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                            </div>
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-cart-plus"></i> Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card guitar-card">
+                        <img src="https://www.michenaud.com/upDATA/p/59000/58627/img1719915300-gBvp4O/500medium.jpg" alt="Basse">
+                        <div class="card-body">
+                            <span class="badge badge-custom">Promo</span>
+                            <h5 class="card-title">Fender Precision Bass</h5>
+                            <p class="card-text">Basse légendaire avec un son profond et percutant pour tous les styles.</p>
+                            <div class="price">899 € <small class="text-muted text-decoration-line-through">1 099 €</small></div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                            </div>
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-cart-plus"></i> Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card guitar-card">
+                        <img src="https://www.michenaud.com/upDATA/p/60000/59675/img1736852784-W9ceAn2i/500medium.jpg" alt="Guitare Électrique">
+                        <div class="card-body">
+                            <h5 class="card-title">Ibanez RG Series</h5>
+                            <p class="card-text">Guitare haute performance parfaite pour les joueurs de métal et rock.</p>
+                            <div class="price">4 699 €</div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                            </div>
+                            <button class="btn btn-primary btn-add-cart">
+                                <i class="fas fa-cart-plus"></i> Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section class="bg-light py-5" id="apropos">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title text-start">Pourquoi Choisir GuitarCenter ?</h2>
+                    <p class="lead">Nous sommes passionnés par la connexion des musiciens avec leur instrument parfait choisie grace à leur envie et conviction.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"></i> Plus de 100 000 guitares en stock</li>
+                        <li class="mb-3"></i> Livraison gratuite dès 100 €</li>
+                        <li class="mb-3"></i> Garantie satisfait ou remboursé 30 jours</li>
+                        <li class="mb-3"></i> Support client expert 24/24H</li>
+                        <li class="mb-3"></i> Paiement sécurisé</li>
+                        <li class="mb-3"></i> Paiement en plusieurs fois certifier Oney</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://media.gettyimages.com/id/1128362993/fr/photo/portrait-of-american-rock-group-pantera-backstage-at-the-aragon-ballroom-chicago-illinois.jpg?s=612x612&w=0&k=20&c=fUX90jen4bFEBykyqNFI6K9OEVXbX-UAbGUGwUZ2vJI=" alt="À Propos" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>GuitarCenter</h5>
+                    <p>Votre destination première pour des guitares de qualité. Nous connectons les musiciens avec leurs instruments de rêve.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#guitares">Boutique</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Service Client</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Info Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Nous Contacter</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 182 Avenue Jean Jaurès, 75019 Paris</p>
+                    <p><i class="fas fa-phone me-2"></i> +33 7 43 81 74 30</p>
+                    <p><i class="fas fa-envelope me-2"></i> G&C@gmail.com</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+             
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
