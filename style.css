@@ -1,0 +1,560 @@
+/* Variables de couleurs */
+
+:root {
+    --primary-color: #1f1c2c;
+    --secondary-color: #928DAB;
+    --accent-color: #928DAB;
+    --quiz-bg: linear-gradient(135deg, #1f1c2c 0%, #928DAB 100%);
+}
+
+body {
+    font-family: serif;
+    background-color: #d8d8da;
+}
+
+
+/* Navigation */
+
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-brand i {
+    color: var(--secondary-color);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+
+/* Section Hero */
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.mos.cms.futurecdn.net/Ny4vGEiv4KpvWPUg8Z3TUJ-970-80.jpg.webp') center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+
+/* Boutons */
+
+.btn-primary-custom {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s;
+    color: black;
+}
+
+.btn-primary-custom:hover {
+    background-color: #e8ecf1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Titres de section */
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+/* Cartes de guitares */
+
+.guitar-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.guitar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.guitar-card img {
+    height: 280px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.guitar-card .card-body {
+    padding: 20px;
+}
+
+.guitar-card .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+
+/* Prix */
+
+.price {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+/* Badges */
+
+.badge-custom {
+    background-color: var(--accent-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+
+/* Bouton Ajouter au Panier */
+
+.btn-add-cart {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.btn-add-cart:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* Section Catégories */
+
+.category-section {
+    background-color: #d8d8da;
+    padding: 60px 0;
+}
+
+.category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-card i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.category-card h4 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+/* Quiz Section */
+
+.quiz-section {
+    background: var(--quiz-bg);
+    padding: 60px 0;
+}
+
+.quiz-section .section-title {
+    color: white;
+}
+
+.quiz-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quiz-question-box,
+.quiz-results-box {
+    background: rgb(148, 143, 163);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(224, 217, 217, 0.24);
+}
+
+.question-counter {
+    display: inline-block;
+    background: var(--quiz-bg);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.quiz-question {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.quiz-answers {
+    display: grid;
+    gap: 15px;
+}
+
+.quiz-answer {
+    background: #d8d8da;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.quiz-answer:hover {
+    background: #e8ecf1;
+    border-color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+.quiz-answer.correct {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    font-weight: bold;
+}
+
+.quiz-answer.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.quiz-navigation {
+    text-align: center;
+}
+
+.quiz-results-box {
+    text-align: center;
+}
+
+.result-icon {
+    font-size: 5rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+    animation: bounceIn 0.6s;
+}
+
+.score-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+.score-display span {
+    background: var(--quiz-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.result-message {
+    font-size: 1.3rem;
+    color: #f7e7e7;
+    margin-top: 20px;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* Section À Propos */
+
+.bg-light {
+    background-color: #d8d8da !important;
+}
+
+.bg-light .section-title {
+    color: #000;
+}
+
+.bg-light .lead,
+.bg-light p,
+.bg-light li {
+    color: #000;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 0;
+}
+
+.footer h5 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+
+/* Icône Panier */
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+}
+
+
+/* Page Panier */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.cart-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.checkout-section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(146, 141, 171, 0.25);
+}
+
+.summary-box {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    position: sticky;
+    top: 20px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.summary-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 15px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--secondary-color);
+    background: white;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quantity-btn:hover {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-cart i {
+    font-size: 5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.payment-option {
+    border: 2px solid #d8d8da;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.payment-option:hover {
+    border-color: var(--secondary-color);
+}
+
+.payment-option.active {
+    border-color: var(--secondary-color);
+    background-color: rgba(146, 141, 171, 0.1);
+}
+
+.security-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.security-badge i {
+    color: #4caf50;
+    font-size: 1.5rem;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .quiz-question-box,
+    .quiz-results-box {
+        padding: 25px;
+    }
+    .quiz-question {
+        font-size: 1.2rem;
+    }
+    .score-display {
+        font-size: 3rem;
+    }
+}
